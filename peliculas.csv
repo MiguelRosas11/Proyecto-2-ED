@@ -1,0 +1,49 @@
+"_id","_labels","duracion","nombre","rating","_start","_end","_type"
+"6",":Película","Larga","Inception","8.8",,,
+"7",":Película","Corta","Yes Day","6.1",,,
+"8",":Película","Larga","The Matrix","8.7",,,
+"9",":Película","Corta","The Mitchells vs. The Machines","7.6",,,
+"10",":Película","Larga","The Revenant","8.0",,,
+"11",":Película","Corta","John Wick","7.4",,,
+"12",":Género","","Ciencia Ficción","",,,
+"13",":Género","","Comedia","",,,
+"14",":Género","","Animación","",,,
+"15",":Género","","Drama","",,,
+"16",":Género","","Acción","",,,
+"17",":Género","","Suspenso","",,,
+"18",":Género","","Aventura","",,,
+"19",":Plataforma","","Netflix","",,,
+"20",":Plataforma","","HBO Max","",,,
+"21",":Plataforma","","Disney+","",,,
+"22",":Plataforma","","Amazon Prime Video","",,,
+"23",":Persona","","Leonardo DiCaprio","",,,
+"24",":Persona","","Keanu Reeves","",,,
+"25",":Persona","","Jennifer Garner","",,,
+"26",":Persona","","Olivia Colman","",,,
+"27",":Persona","","Tom Hardy","",,,
+"28",":Persona","","Abbi Jacobson","",,,
+,,,,,"6","12","ES_DEL_GENERO"
+,,,,,"6","20","ESTA_EN"
+,,,,,"7","13","ES_DEL_GENERO"
+,,,,,"7","19","ESTA_EN"
+,,,,,"8","12","ES_DEL_GENERO"
+,,,,,"8","20","ESTA_EN"
+,,,,,"9","13","ES_DEL_GENERO"
+,,,,,"9","14","ES_DEL_GENERO"
+,,,,,"9","19","ESTA_EN"
+,,,,,"10","15","ES_DEL_GENERO"
+,,,,,"10","18","ES_DEL_GENERO"
+,,,,,"10","20","ESTA_EN"
+,,,,,"10","21","ESTA_EN"
+,,,,,"11","16","ES_DEL_GENERO"
+,,,,,"11","17","ES_DEL_GENERO"
+,,,,,"11","20","ESTA_EN"
+,,,,,"11","22","ESTA_EN"
+,,,,,"23","6","ACTUÓ_EN"
+,,,,,"23","10","ACTUÓ_EN"
+,,,,,"24","8","ACTUÓ_EN"
+,,,,,"24","11","ACTUÓ_EN"
+,,,,,"25","7","ACTUÓ_EN"
+,,,,,"26","9","ACTUÓ_EN"
+,,,,,"27","6","ACTUÓ_EN"
+,,,,,"28","9","ACTUÓ_EN"
