@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><?import javafx.geometry.Insets?><?import javafx.scene.control.*?><?import javafx.scene.layout.*?>
+<AnchorPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.MenuController">
+  <children>
+    <VBox alignment="CENTER" spacing="15" AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0">
+      <padding><Insets top="20" right="20" bottom="20" left="20"/></padding>
+      <Label text="Menú Principal" style="-fx-font-size:18px;-fx-font-weight:bold;"/>
+      <Button fx:id="btnRecomendaciones" text="Recomendaciones" onAction="#onRecomendaciones" prefWidth="200"/>
+      <Button fx:id="btnListaDeseos" text="Lista de deseos" onAction="#onListaDeseos" prefWidth="200"/>
+      <Button fx:id="btnSalir" text="Salir" onAction="#onSalir" prefWidth="200"/>
+      <Button fx:id="btnAgregarPelicula" text="Agregar película" onAction="#onAgregarPelicula" prefWidth="200" visible="false"/>
+      <Button fx:id="btnEliminarPelicula" text="Eliminar película" onAction="#onEliminarPelicula" prefWidth="200" visible="false"/>
+    </VBox>
+  </children>
+</AnchorPane>

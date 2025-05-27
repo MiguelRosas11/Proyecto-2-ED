@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><?import javafx.geometry.Insets?><?import javafx.scene.control.*?><?import javafx.scene.layout.*?>
+<AnchorPane xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.LoginController">
+  <children>
+    <VBox alignment="CENTER" spacing="10" AnchorPane.topAnchor="0" AnchorPane.bottomAnchor="0" AnchorPane.leftAnchor="0" AnchorPane.rightAnchor="0">
+      <padding><Insets top="20" right="20" bottom="20" left="20"/></padding>
+      <Label text="Login"/>
+      <TextField fx:id="tfUsuario" promptText="Usuario"/>
+      <PasswordField fx:id="tfPassword" promptText="Contraseña"/>
+      <Label fx:id="lblError" textFill="red"/>
+      <HBox spacing="10">
+        <Button text="Entrar" onAction="#onLogin"/>
+        <Button text="Registrarse" onAction="#onRegister"/>
+      </HBox>
+    </VBox>
+  </children>
+</AnchorPane>

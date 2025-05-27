@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/19"
+            xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="org.example.RegistroWizardController">
+
+  <center>
+    <StackPane>
+
+      <!-- Paso 1: Credenciales -->
+      <VBox fx:id="paneCredentials" spacing="10" visible="true">
+        <padding><Insets top="20" right="20" bottom="20" left="20"/></padding>
+        <Label text="Registro - Paso 1/5"/>
+        <Label text="Crea tu cuenta ingresando usuario y contraseña"/>
+        <TextField fx:id="tfNewUsuario"
+                   promptText="Usuario"
+                   maxWidth="Infinity"/>
+        <PasswordField fx:id="tfNewPassword"
+                       promptText="Contraseña"
+                       maxWidth="Infinity"/>
+      </VBox>
+
+      <!-- Paso 2: Géneros -->
+      <VBox fx:id="paneGenres" spacing="5" visible="false" fillWidth="true">
+        <padding><Insets top="10" right="10" bottom="10" left="10"/></padding>
+        <Label text="Paso 2/5 - Géneros"/>
+        <Label text="Selecciona tus géneros favoritos"/>
+        <TextField fx:id="tfSearchGenres"
+                   promptText="Buscar género"
+                   maxWidth="Infinity"/>
+        <ScrollPane fitToWidth="true"
+                    VBox.vgrow="ALWAYS"
+                    maxWidth="Infinity"
+                    prefViewportHeight="200">
+          <content>
+            <VBox fx:id="vboxGenres" spacing="5"/>
+          </content>
+        </ScrollPane>
+      </VBox>
+
+      <!-- Paso 3: Actores -->
+      <VBox fx:id="paneActors" spacing="5" visible="false" fillWidth="true">
+        <padding><Insets top="10" right="10" bottom="10" left="10"/></padding>
+        <Label text="Paso 3/5 - Actores"/>
+        <Label text="Selecciona tus actores favoritos"/>
+        <TextField fx:id="tfSearchActors"
+                   promptText="Buscar actor"
+                   maxWidth="Infinity"/>
+        <ScrollPane fitToWidth="true"
+                    VBox.vgrow="ALWAYS"
+                    maxWidth="Infinity"
+                    prefViewportHeight="200">
+          <content>
+            <VBox fx:id="vboxActors" spacing="5"/>
+          </content>
+        </ScrollPane>
+      </VBox>
+
+      <!-- Paso 4: Plataformas -->
+      <VBox fx:id="panePlatforms" spacing="5" visible="false" fillWidth="true">
+        <padding><Insets top="10" right="10" bottom="10" left="10"/></padding>
+        <Label text="Paso 4/5 - Plataformas"/>
+        <Label text="Selecciona tus plataformas de streaming"/>
+        <TextField fx:id="tfSearchPlatforms"
+                   promptText="Buscar plataforma"
+                   maxWidth="Infinity"/>
+        <ScrollPane fitToWidth="true"
+                    VBox.vgrow="ALWAYS"
+                    maxWidth="Infinity"
+                    prefViewportHeight="200">
+          <content>
+            <VBox fx:id="vboxPlatforms" spacing="5"/>
+          </content>
+        </ScrollPane>
+      </VBox>
+
+      <!-- Paso 5: Películas -->
+      <VBox fx:id="paneMovies" spacing="5" visible="false" fillWidth="true">
+        <padding><Insets top="10" right="10" bottom="10" left="10"/></padding>
+        <Label text="Paso 5/5 - Películas"/>
+        <Label text="Selecciona algunas películas que ya has visto"/>
+        <TextField fx:id="tfSearchMovies"
+                   promptText="Buscar película"
+                   maxWidth="Infinity"/>
+        <ScrollPane fitToWidth="true"
+                    VBox.vgrow="ALWAYS"
+                    maxWidth="Infinity"
+                    prefViewportHeight="200">
+          <content>
+            <VBox fx:id="vboxMovies" spacing="5"/>
+          </content>
+        </ScrollPane>
+      </VBox>
+
+    </StackPane>
+  </center>
+
+  <bottom>
+    <HBox spacing="10" alignment="CENTER_RIGHT">
+      <padding><Insets top="10" right="10" bottom="10" left="10"/></padding>
+      <Button fx:id="btnBack"
+              text="Atrás"
+              onAction="#onBack"
+              disable="true"/>
+      <Button fx:id="btnNext"
+              text="Siguiente"
+              onAction="#onNext"/>
+    </HBox>
+  </bottom>
+
+</BorderPane>

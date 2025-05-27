@@ -1,25 +1,13 @@
 package org.example;
 
 public class Usuario {
-    private String id;
-    private String nombre;
-    private String contraseña;
+    private String nombre, password, rol;
 
-    public Usuario(String id, String nombre, String contraseña) {
-        this.id = id;
-        this.nombre = nombre;
-        this.contraseña = contraseña;
+    public Usuario() {}
+    public Usuario(String nombre, String password, String rol) {
+        this.nombre = nombre; this.password = password; this.rol = rol;
     }
-
-    public String getId() {
-        return id;
-    }
-
-    public String getNombre() {
-        return nombre;
-    }
-
-    public String getContraseña() {
-        return contraseña;
-    }
+    public String getNombre() { return nombre; }
+    public String getRol() { return rol; }
+    public boolean esAdmin() { return "admin".equalsIgnoreCase(rol); }
 }
