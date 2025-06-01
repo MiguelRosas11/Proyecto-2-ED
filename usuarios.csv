@@ -1,6 +1,5 @@
 nombre,password,rol
 
-test,test123,admin
-
-test1,test1,usuario
-test2,test2,usuario
+Miguel,1234,usuario
+usuario1,1111,usuario
+usuario2,2222,usuario
