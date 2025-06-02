@@ -38,7 +38,7 @@ public class AlgoritmoRecomendacion {
             double pesoA = total > 0 ? a / total : 0.0;
             double pesoP = total > 0 ? p / total : 0.0;
 
-            // Colaborativa corregida
+            // Colaborativa
             session.run(
                     "MATCH (u1:Usuario {nombre:$n}) " +
                             "MATCH (u1)-[:VIÓ]->(p:Película)<-[:VIÓ]-(v:Usuario) " +
@@ -86,7 +86,7 @@ public class AlgoritmoRecomendacion {
                 mapScores.put(nom, mapScores.getOrDefault(nom, 0.0) + pesoP);
             });
 
-            // Populares (corregido el error)
+            // Populares
             List<String> populares = session.run(
                     "MATCH (u:Usuario {nombre:$n}) " +
                             "MATCH (p:Película) " +
